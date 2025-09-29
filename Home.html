@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Corps Portal - Home</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo-container">
+      <div class="logo-circle">
+        <img src="images/logo.jpg" alt="E-Corps Logo" class="logo-img">
+      </div>
+      <span class="logo-text">E-Corps Portal</span>
+    </div>
+    <nav>
+      <a href="Login.html" class="header-btn">Login</a>
+      <a href="Register.html" class="header-btn header-btn-outline">Register</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Slideshow -->
+  <section class="hero">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="images/slide1.jpg" alt="Event 1">
+        <div class="caption">ATC Culturals</div>
+      </div>
+      <div class="mySlides fade">
+        <img src="images/slide2.jpg" alt="Event 2">
+        <div class="caption">ATC Overall Winner</div>
+      </div>
+      <div class="mySlides fade">
+        <img src="images/slide3.jpg" alt="Event 3">
+        <div class="caption">5 Trophy</div>
+      </div>
+    
+     <div class="mySlides fade">
+        <img src="images/slide4.jpg" alt="Event 4">
+        <div class="caption">Pongal Celebration</div>
+      </div>
+    
+     <div class="mySlides fade">
+        <img src="images/slide5.jpg" alt="Event 5">
+        <div class="caption">B Certificate</div>
+    </div>
+     <div class="mySlides fade">
+        <img src="images/slide6.jpg" alt="Event 6">
+        <div class="caption">IUC-Team</div>
+      </div>
+   
+     <div class="mySlides fade">
+        <img src="images/slide7.jpg" alt="Event 7">
+        <div class="caption">SS Trophy</div>
+      </div>
+    
+     <div class="mySlides fade">
+        <img src="images/slide8.jpg" alt="Event 8">
+        <div class="caption">Trekking</div>
+      </div>
+     <div class="mySlides fade">
+        <img src="images/slide9.jpg" alt="Event 9">
+        <div class="caption">TC Ians</div>
+      </div>
+
+     <div class="mySlides fade">
+        <img src="images/slide10.jpg" alt="Event 10">
+        <div class="caption">IUC-2024</div>
+      </div>
+</div>
+      
+    </div>
+
+    <!-- Slogan under slideshow -->
+    <div class="hero-text">
+      <h1>Empowering NCC Navy Cadets</h1>
+      <h3><p>"Learn Today, Lead Tomorrow".</p></h3>
+    </div>
+  </section>
+
+ 
+  <!-- Slideshow Script -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("mySlides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 4000); // Change image every 4 seconds
+    }
+  </script>
+</body>
+</html>

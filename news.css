@@ -1,0 +1,143 @@
+/* Global styling */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 20px;
+    background: linear-gradient(135deg, #f9f9f9, #eef2f7);
+    color: #333;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    margin: 20px 0;
+    color: #222;
+    font-size: 1.8em;
+}
+
+/* Navigation bar */
+.navbar {
+    background: #1a1a1a;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: background 0.3s;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    background: #444;
+}
+
+.navbar a.active {
+    background: #ff9800;
+    color: white;
+}
+
+.dashboard-btn {
+    background: #007bff;
+    color: white;
+}
+
+.dashboard-btn:hover {
+    background: #0056b3;
+}
+
+/* News cards */
+.news-list {
+    max-width: 800px;
+    margin: auto;
+}
+
+.news-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.news-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.news-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.3em;
+}
+
+.news-card h3 a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.news-card h3 a:hover {
+    text-decoration: underline;
+}
+
+.news-card p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.news-card small {
+    color: #777;
+}
+
+/* No news */
+.no-news {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* Links page */
+.links-list {
+    max-width: 600px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+
+.links-list li {
+    margin: 12px 0;
+}
+
+.links-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.links-list a:hover {
+    background: #eaf3ff;
+    color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .page-title {
+        font-size: 1.5em;
+    }
+}

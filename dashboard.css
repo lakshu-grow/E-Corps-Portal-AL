@@ -1,0 +1,207 @@
+/* ================================
+   General Styles (Common to All)
+   ================================= */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+}
+
+a {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* ================================
+   Admin Dashboard Styles
+   ================================ */
+
+.admin-header {
+    background-color: #006699;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.admin-header a {
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+/* 🔥 Use grid instead of flex for auto wrap */
+.admin-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1200px; /* limit max width for nice look */
+  padding: 0 20px;   /* side padding */
+}
+
+.admin-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.admin-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.admin-card p {
+  color: #555;
+  font-size: 14px;
+}
+
+.admin-card a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #0056b3;
+  font-weight: bold;
+}
+
+/* ================================
+   User Home Dashboard Styles
+   ================================= */
+.user-header {
+    background-color: #006699;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.user-header a {
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.user-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.user-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.user-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #006699;
+}
+
+.user-card p {
+    color: #555;
+    font-size: 14px;
+}
+
+.user-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #0056b3;
+    font-weight: bold;
+}
+  
+  
+  /* ================================
+   User Home Dashboard Styles
+   ================================= */
+.user-header {
+    background-color: #006699;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.user-header a {
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.user-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.user-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.user-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #006699;
+}
+
+.user-card p {
+    color: #555;
+    font-size: 14px;
+}
+
+.user-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #0056b3;
+    font-weight: bold;
+}
+

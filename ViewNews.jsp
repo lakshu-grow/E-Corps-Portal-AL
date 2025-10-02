@@ -5,7 +5,7 @@
 
     // ✅ If no articles (first visit), redirect to indiaNews servlet
     if (articles == null) {
-        response.sendRedirect(request.getContextPath() + "/indiaNews");
+        response.sendRedirect(request.getContextPath() + "/indiaNews1");
         return;
     }
 %>
@@ -19,7 +19,7 @@
 <body>
     <!-- ✅ Same Navbar -->
     <div class="navbar">
-        <a href="<%=request.getContextPath()%>/indiaNews" class="active">🔄 Refresh News</a>
+        <a href="<%=request.getContextPath()%>/indiaNews1" class="active">🔄 Refresh News</a>
         <a href="Links.html">🌐 Useful Links</a>
         <a href="Cadet.html" class="dashboard-btn">🏠 Back to Dashboard</a>
     </div>
@@ -43,3 +43,4 @@
     </div>
 </body>
 </html>
+
